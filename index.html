@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Cifrado César - Aplicación Web</title>
+    <meta name="description" content ="Cifra cualquier texto para enviar a cualquier persona desde esta simple aplicación web. Ten tu propio lenguaje privado.">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700|Poppins:400,500,700,900" rel="stylesheet">
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+  <section class="box">
+    <div class="header">
+        <div class="logo"><center><img src="images/logocaesar.png"></center></div>
+        <p class="descriptionone">Podrás codificar tu texto o decodificarlo de una manera rápida y sencilla. ¿Cómo? Muy simple y gracias al cifrado por sustitución en el que una letra es reemplazada por otra letra a un número fijo de posiciones más adelante en el alfabeto.</p>
+        <div class="gif"><center><img src="images/Webp.net-gifmaker.gif"></center></div>
     </div>
+    <div class="bodybox">
+        <h1 class="titleweb">Solo escribe tu texto aquí</h1>
+        <p class="descriptiontwo">PASO 1: OJO: Solo permite cifrar letras de A - Z (no ingreses símbolos y la letra Ñ)</p>
+        <textarea class="" type="text" id="processcipher" placeholder="Ingresa tu texto a cifrar" rows="10"></textarea>
+        <p class="descriptiontwo"><b>PASO 2:</b> Ingrese su Offset o número de desplazamiento <a href="#">(¿Y esto para qué sirve?)</a></p>
+        <input  class="" type="number" id="processoffset" placeholder="Ej: 2"></input>
+        <div class="">
+            <center><button class="buttoncipher" id="actioncipher" type="button">CIFRAR TEXTO</button>
+            <button class="buttondecipher" id="actiondecipher" type="button">DECIFRAR TEXTO</button></center>
+        </div>
+        <div class="texttocopy" id="contentresult">
+            
+          <div id="root"></div>
+        </div>
+    </div>
+    
+  </section>
+  <footer>
+    
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
