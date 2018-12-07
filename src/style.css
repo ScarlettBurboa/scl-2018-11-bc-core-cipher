@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*------------------ Estilos CSS Sitio web ------------------*/
+/*------------------ Estilos CSS Sitio web básicos, selectores ------------------*/
 
 h1,h2,h3,h4,h5,h6, .result{
     font-family:'Poppins'; 
@@ -60,11 +60,15 @@ h1{
     font-size: 40px; 
 }
 a{
-    color: #FF775F;
+    color: #fff;
     transition:all 0.3s ease;
 }
 a:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
     color:#fff;
+}
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FFF;
@@ -97,20 +101,25 @@ input{
   margin-bottom:30px;
 }
 body{
+    width:100%;
+    height: 100%;
     font-family: 'Noto Sans SC'; 
     background-image: url(../src/images/fondo.jpg); 
     background-size: cover; 
+    background-repeat: no-repeat;
 }
+/*----------------- Css Cajas y cuerpo del sitio ----------------------*/
 .box{
     width:100%;
-    max-height:  1000px;
+    max-height:  1200px;
     height:100%;
+    min-height: 750px;
 }
 .header{
-    background-color: #FF775F; 
+    background-color: #282828; 
     width: 30%; 
     height: 100%; 
-    max-height: 1000px; 
+    max-height: 1300px; 
    display:block;
     float:left;
 }
@@ -121,7 +130,7 @@ body{
 .logo img{
  max-width: 280px;
  text-align: center;
- padding: 10px;
+ padding: 20px;
  }
 .bodybox{
  width:70%;
@@ -152,6 +161,8 @@ padding-top:30px;
  }
 .gif{
     max-width: 100%;
+    padding-bottom: 30px;
+
 }
 .gif img{
     width:100%; 
@@ -181,7 +192,7 @@ padding-top:30px;
 }
 
 .buttoncipher, .buttondecipher, .buttoncopy{
-        background: #282828;
+        background: #E81313;
         color: #FFF;
         width: 100%; 
         max-width: 350px; 
@@ -198,7 +209,7 @@ padding-top:30px;
 }
 .buttoncopy{width:100%; max-width: 180px;}
 .buttondecipher{
-    background-color: #FF775F !important; 
+    background-color: #282828 !important; 
 }
 .buttoncipher:hover, .buttoncopy:hover{
     -webkit-transform: scale(0.8);
@@ -227,7 +238,64 @@ padding-top:30px;
 }
 footer{
     width: 100%; 
-    height: 200px; 
-    background-color: #282828;
+    height: 150px; 
+
     display:block;    
+}
+.logofooter{
+    width:300px;
+    border-bottom:1px solid #fff;
+    margin: 10px auto;
+}
+.logofooter img{
+    max-width: 280px;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    color:#fff;
+    text-align:center;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    font-size:11px;
+}
+.backgroundresalt{
+    background: #E81313;
+    color:#fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.boxexample{
+    width:70%;
+    margin:40px auto;
+    height: 700px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    }
+.textexample{
+    padding: 20px 40px;
+    font-family:'Poppins'; 
+    text-align:center;
+    font-weight: 600; 
+    color:#fff;  
+    letter-spacing: 2px; 
+    font-size: 17px;
+}
+.imagenexample{
+ max-width:400px;
+ width: 100%;
+}
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+    .header{width:100%;}
+    .bodybox{width:100%;}
+    .box {min-height: 1800px;}
+    .descriptionone {padding: 30px 20px;margin:0;}
+    .bodybox h1{padding: 10px 20px;}
+    .descriptiontwo{padding: 0px 20px;}
+    .buttoncipher, .buttondecipher, .buttoncopy {margin: 10px 0;}
 }
