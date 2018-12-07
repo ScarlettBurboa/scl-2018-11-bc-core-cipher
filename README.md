@@ -80,10 +80,10 @@ El proyecto fue realizado bajo el concepto _paso a paso_ el cual consiste en rea
 + A cada `<input>`, `<textarea>` y `<button>` de la estructura agregar un `id` de indentificación para funciones.
 + Agregar eventos o acciones mediante el uso del DOM especificamente el método `.addEventListener`. (Esto en el `index.js`) y dentro de este evento guardar la información ingresada por el usuario mediante variables las cuales serían utilizadas en parámetros por el archivo `chiphe.js`.
 + Dichas variables se utilizan dentro de un ciclo `for` el cual tendrá dentro condiciones las cuales deberá cumplir
-    > Tomar una letra y leerla para devolver la posición de un caracter en unicode
-    > Ese numero posteriormente deberá ser incluido en una fórmula matemática para obtener el valor final, y posteriormente usar ese valor con el numero de desplazamiento para obtener una posición y un valor que se conventirán nuevamente en un carácter. 
-    > Para esto se utilizaron en la acción de codificar los métodos `.charCodeAt` el cual devuelve la posición de un caracter en unicode y el método `String.fromCharCode` que toma números enteros decimales que representan valores ASCII. y lo devuelve en una cadena. 
-    > En el caso del decifrado solo cambia un ítem matemático en donde en el cifrado se suma el offset mientras que en el decifrado se resta logrando todo lo contrario. 
-    > En este último se utilizaron dos métodos más que son el `.push` el cual va agregando los elementos a medida que van apareciendo y el método `.join` el cual le indica con qué elemento debe ser separado, y como en este caso necesitamos que las palabras estén unidas a excepción del espacio, no se ingresó ningún valor al join.
-    + Y por último mostrar ese resultado en el HTML con el uso del DOM.
++ Tomar una letra y leerla para devolver la posición de un caracter en unicode
++ Ese numero posteriormente deberá ser incluido en una fórmula matemática para obtener el valor final, y posteriormente usar ese valor con el numero de desplazamiento para obtener una posición y un valor que se conventirán nuevamente en un carácter. 
++ Para esto se utilizaron en la acción de codificar los métodos `.charCodeAt` el cual devuelve la posición de un caracter en unicode y el método `String.fromCharCode` que toma números enteros decimales que representan valores ASCII. y lo devuelve en una cadena. 
++ En el caso del decifrado solo cambia un ítem matemático en donde en el cifrado se suma el offset mientras que en el decifrado se resta logrando todo lo contrario. 
++ En este último se utilizaron dos métodos más que son el `.push` el cual va agregando los elementos a medida que van apareciendo y el método `.join` el cual le indica con qué elemento debe ser separado, y como en este caso necesitamos que las palabras estén unidas a excepción del espacio, no se ingresó ningún valor al join.
++ Y por último mostrar ese resultado en el HTML con el uso del DOM.
 
