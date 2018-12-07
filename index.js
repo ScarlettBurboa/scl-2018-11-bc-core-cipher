@@ -7,7 +7,7 @@ window.onload = () =>{
         contcipher.classList.add('resultext');
         contcipher.innerHTML = cipher.encode(strngText, offsetNumber);
 
-        let buttonCopy = document.createElement('button');
+        /*let buttonCopy = document.createElement('button');
         let buttonCopyContent = document.createTextNode('Copiar Texto');
         buttonCopy.appendChild(buttonCopyContent);
         buttonCopy.setAttribute("type","button");
@@ -30,7 +30,7 @@ window.onload = () =>{
           window.getSelection().removeAllRanges();
           // cuando los navegadores lo soporten, habría
           // que utilizar: removeRange(range)
-          })
+          })*/
     });
     const contdechiper = document.getElementById('contentresult');
     document.getElementById('actiondecipher').addEventListener('click', (eventdechiper) =>{
